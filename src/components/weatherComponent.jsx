@@ -1,5 +1,4 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function CardWeather({weatherData}){
@@ -16,7 +15,7 @@ function CardWeather({weatherData}){
                          <Card style={{ width: '18rem' }}>
                             <Card.Body>
                                 <Card.Text>
-                                    <p>Date: { (new Date).toJSON().slice(0, 10)} </p>
+                                    <p>Date: { (new Date()).toJSON().slice(0, 10)} </p>
                                     <p>City Name: {weatherData.name}</p>
                                     <p>Temprature: {weatherData.main.temp} &deg;C</p>
                                     <p>Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>

@@ -1,5 +1,4 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function CardFiveWeather({weatherData}){
@@ -8,7 +7,7 @@ function CardFiveWeather({weatherData}){
      if (weatherData) {
              return  weatherData.map((item,index)=>{
 
-                 if(index % 2 == 0 ){
+                 if(index % 2 === 0 ){
                        
                     return (<>
                         <Card style={{ width: '18rem' }}>

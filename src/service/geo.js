@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 
-
-const API_key = "";
+const API_key = process.env.REACT_APP_SECRET_NAME;
 
 
 function weather(url, args){
